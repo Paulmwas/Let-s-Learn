@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #d9d9d9;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 400;
+}
+header ul li{
+    margin-right: 10px;
+    color: rgb(43, 31, 136);
+}
+header ul li a{
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+header ul li a:hover{
+    color: rgb(54, 47, 108);
+    font-weight: 600;
+}
+.get-started-btn{
+    background-color: rgb(43, 31, 136);
+    padding: 10px 30px;
+    color: white;
+    border: solid 1px rgb(43, 31, 136);
+    border-radius: 10px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: .8s;
+    transition-timing-function: ease-in-out;
+
+}
+.get-started-btn:hover{
+    background-color:  #d9d9d9;
+    color: rgb(43, 31, 136);
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+    gap: 20px;
+}
+.bottomm-text{
+    padding: 10px 20px;
+    background-color: #d9d9d9;
+}
+.foot p{
+    color: rgb(43, 31, 136);
+    font-weight: 600;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.foot ul{
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+.foot ul:hover{
+    color: rgb(54, 47, 108);
+    font-weight: 300;
+}
+.pshot p a{
+    text-decoration: none;
+    background-color: rgb(43, 31, 136);
+    color: #fff;
+    font-weight: 300;
+    padding: 10px 10px;
+    border: solid 1px rgb(43, 31, 136);
+    transition: all .8s ease-in-out;
+}
+.pshot p a:hover{
+    background-color: #d9d9d9;
+    color: rgb(43, 31, 136);
+    font-weight: 600;
+}

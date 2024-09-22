@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>KinderLearn</title>{% endblock title %}
+    
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+<body>
+    <header>
+        <img src="{% static 'images/logo.png' %}" height="60px">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACTS</a></li>
+            <li><a href="">PREVIEW</a></li>
+            <li><a  class="get-started-btn" href="">GET STARTED</a></li>
+        </ul>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <div>
+            <img src="{% static 'images/logo.png' %}" alt="" width="60px">
+        </div>
+        <div class="programs foot">
+            <p>Programs</p>
+            <ul>Video + Written Notes</ul>
+            <ul>Interactive Learning</ul>
+            <ul>Parental Control</ul>
+            <ul>Progress Tracking</ul>
+        </div>
+        <div class="Company foot">
+            <p>Company</p>
+            <ul>About Us</ul>
+            <ul>Our Team</ul>
+            <ul>Join Us</ul>
+            <ul>Terms of Service</ul>
+        </div>
+        <div class="Resources foot">
+            <p>Resouce</p>
+            <ul>Blog</ul>
+            <ul>FAQ</ul>
+            <ul>Help Center</ul>
+        </div>
+        <div class="pshot foot">
+            <p>Teach Your Child How To Think <a href="">Join Program</a></p>
+        </div>
+        
+    </footer>
+    <hr>
+    <p class="bottomm-text">&copy; 2023 KinderLearn. All rights reserved.</p>
+</body>
+</html>
