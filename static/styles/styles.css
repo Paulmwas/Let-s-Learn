@@ -101,3 +101,8 @@ footer{
     color: rgb(43, 31, 136);
     font-weight: 600;
 }
+.hero-section{
+    background: #1313de;
+    height: 100vh;
+    width: 100%;
+}
