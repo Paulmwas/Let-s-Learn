@@ -120,6 +120,7 @@ footer{
     border-radius: 50px;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .main h1{
     font-size: 50px;
@@ -141,7 +142,7 @@ footer{
     color: #fff;
     font-weight: 300;
     font-size: 25px;
-    padding: 10px 30px;
+    padding: 10px 35px;
     border: solid 1px rgb(43, 31, 136);
     transition: all .8s ease-in-out;
     border-radius: 30px;
