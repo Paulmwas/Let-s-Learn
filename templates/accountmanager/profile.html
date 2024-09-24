@@ -1,0 +1,8 @@
+{% extends "../_base.html" %}
+{% load static %}
+{% block title %} <title>Profile</title>{% endblock title %}
+{% block content %}
+    <h2>My Profile</h2>
+    <p>Hello, {{request.user.username}}</p>
+    <a href="{% url 'logout' %}">Log Out</a>
+{% endblock content %}
