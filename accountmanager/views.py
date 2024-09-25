@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
+from .forms import StudentProfileData
 
 # Signup view
 def signup(request):
@@ -38,5 +40,13 @@ def logout_page(request):
     return redirect('login')
 
 # Profile view
+@login_required
 def profile_page(request):
     return render(request, 'accountmanager/profile.html')
+def profile_form(request):
+    if request.method == 'POST':
+        form = StudentProfileData(request.POST, request.FILES, instance=request.user.profiledata)
+        if form.is_valid():
+            form.save()
+    return render(request, 'accountmanager/profile_form.html')
+

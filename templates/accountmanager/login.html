@@ -1,26 +1,40 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
 </head>
-<body>
-    <div class="conteiner">
+<body class="signup-page">
+    <div class="container">
+        <div class="log-image">
+            <img src="{% static 'images/login.jpg' %}" alt="" >
+        </div>
+        <div log-page>
         <h2>Login</h2>
-        <form action="" method="post">
+        <form action="" method="POST">
             {% csrf_token %}
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+ <!-- Added the 'name' attribute here -->
             <button type="submit">Login</button>
         </form>
         <div class="messages">
             {% for message in messages %}
-             <p>{{ message }}</p>            
+                <p>{{ message }}</p>            
             {% endfor %}
         </div>
+    </div>
     </div>
 </body>
 </html>

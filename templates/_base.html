@@ -13,7 +13,7 @@
     <header>
         <img src="{% static 'images/logo.png' %}" height="60px">
         <ul>
-            <li><a href="">HOME</a></li>
+            <li><a href="{% url 'home' %}">HOME</a></li>
             <li><a href="">ABOUT</a></li>
             <li><a href="">CONTACTS</a></li>
             <li><a href="">PREVIEW</a></li>
@@ -46,8 +46,12 @@
             <ul>FAQ</ul>
             <ul>Help Center</ul>
         </div>
-        <div class="pshot foot">
-            <p>Teach Your Child How To Think <a href="">Join Program</a></p>
+        <div class="pshot">
+            <p>Teach Your Child How To Think
+                {% if not user.is_authenticated %}
+                  <a href="">Join Program</a>          
+                {% endif %}
+            </p>
         </div>
         
     </footer>
