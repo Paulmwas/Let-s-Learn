@@ -91,6 +91,9 @@ footer{
 }
 .pshot p{
     display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .pshot p a{
     text-decoration: none;
@@ -271,4 +274,9 @@ form button{
 form button:hover{
     background-color: #d9d9d9;
     color: rgb(43, 31, 136);
+}
+.account{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 15px;
 }

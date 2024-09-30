@@ -29,6 +29,10 @@
  <!-- Added the 'name' attribute here -->
             <button type="submit">Register</button>
         </form>
+        <div class="account">
+            <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+        </div>
+
         <div class="messages">
             {% for message in messages %}
                 <p>{{ message }}</p>            
