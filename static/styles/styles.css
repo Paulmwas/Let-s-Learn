@@ -280,3 +280,66 @@ form button:hover{
     text-align: center;
     font-size: 15px;
 }
+.profile-form{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.prof-group{
+    height: 200px;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+.prof-group label{
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(43, 31, 136);
+    width: 120px;
+}
+.prof-group input{
+    padding: 10px 20px;
+    border: solid 1px rgb(43, 31, 136);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.prof-about{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    flex-direction: column;
+}
+.prof-about input{
+    padding: 10px 20px;
+    border: solid 1px rgb(43, 31, 136);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    height: 300px;
+    width: 100%;
+}
+.profile-form button{
+    padding: 10px 20px;
+    border: solid 1px rgb(43, 31, 136);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: rgb(43, 31, 136);
+    color: #fff;
+    cursor: pointer;
+    transition: all .8s ease-in-out;
+}
+.profile-form button:hover{
+    background-color: #d9d9d9;
+    color: rgb(43, 31, 136);
+}
